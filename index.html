@@ -23,50 +23,51 @@ header h1 {
   margin: 0 0 10px;
 }
 header p {
-  font-size: 20px;
+  font-size: 19px;
 }
 main {
   max-width: 1000px;
-  margin: auto;
-  padding: 30px 20px;
+  margin: 30px auto;
+  padding: 20px;
 }
 .card {
   background: white;
   border-radius: 16px;
   padding: 25px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px #00000012;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 15px #00000015;
 }
-.card h2 {
+h2 {
   margin-top: 0;
 }
-.button {
-  display: inline-block;
-  background: #287a48;
+a.game {
+  display: block;
+  background: #28784e;
   color: white;
-  padding: 15px 22px;
-  margin: 8px 5px 8px 0;
+  padding: 20px;
+  margin: 15px 0;
   border-radius: 10px;
   text-decoration: none;
+  font-size: 20px;
   font-weight: bold;
+  text-align: center;
 }
-.button:hover {
-  background: #195b33;
+a.game:hover {
+  background: #185c38;
 }
-.teacher {
-  background: #245b8c;
-}
-.teacher:hover {
-  background: #174369;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
 }
 .soon {
   color: #777;
+  font-style: italic;
 }
 footer {
   text-align: center;
   padding: 25px;
-  background: #173d31;
-  color: white;
+  color: #587065;
 }
 </style>
 </head>
@@ -74,50 +75,55 @@ footer {
 
 <header>
   <h1>🌱 Conn's Ag Classroom</h1>
-  <p>Learn. Play. Grow.</p>
-  <p>Interactive Agriculture Review Games</p>
+  <p>Learn. Explore. Compete.</p>
+  <p>Interactive Agriculture Learning Games</p>
 </header>
 
 <main>
-  <h2>🐟 Fish & Wildlife</h2>
+
+<div class="card">
+  <h2>🎣 Fish & Wildlife</h2>
+  <p>Explore Minnesota fish species and test your identification skills!</p>
+
+  <a class="game" href="Fish_Frenzy_Catch_and_Learn.html">
+    🎣 Fish Frenzy: Catch & Learn
+  </a>
+  <p>Individual Student Practice</p>
+
+  <a class="game" href="Minnesota_Fish_ID_Team_Challenge_Classroom_Fixed.html">
+    🏆 Minnesota Fish ID Team Challenge
+  </a>
+  <p>Classroom Team Competition</p>
+</div>
+
+<div class="grid">
 
   <div class="card">
-    <h2>Minnesota Fish ID Challenge</h2>
-    <p>Test your knowledge of Minnesota fish species through pictures, identification questions, and fun challenges!</p>
-    <p>Includes all five fish identification categories.</p>
-
-    <a class="button" href="fish-practice.html">
-      🎮 Student Practice
-    </a>
-
-    <a class="button teacher" href="fish-team.html">
-      🏆 Classroom Team Challenge
-    </a>
+    <h2>⚙️ Ag Mechanics</h2>
+    <p>Welding, small engines, tools and shop safety.</p>
+    <p class="soon">Coming soon!</p>
   </div>
 
-  <h2>⚙️ Ag Mechanics</h2>
   <div class="card">
-    <h2>Welding & Small Engines</h2>
-    <p class="soon">New review games coming soon!</p>
+    <h2>🐶 Animal Science</h2>
+    <p>Dog breeds, livestock and animal care.</p>
+    <p class="soon">Coming soon!</p>
   </div>
 
-  <h2>🐄 Animal Science</h2>
   <div class="card">
-    <h2>Animal Science Games</h2>
-    <p class="soon">New review games coming soon!</p>
+    <h2>🌽 Plant Science</h2>
+    <p>Crops, soils and plant identification.</p>
+    <p class="soon">Coming soon!</p>
   </div>
 
-  <h2>🌽 Plant Science</h2>
   <div class="card">
-    <h2>Plant Science Games</h2>
-    <p class="soon">New review games coming soon!</p>
+    <h2>🌾 Intro to Ag & FFA</h2>
+    <p>Agriculture careers, leadership and FFA knowledge.</p>
+    <p class="soon">Coming soon!</p>
   </div>
 
-  <h2>🌟 Intro to Agriculture & FFA</h2>
-  <div class="card">
-    <h2>Agriculture & FFA Games</h2>
-    <p class="soon">New review games coming soon!</p>
-  </div>
+</div>
+
 </main>
 
 <footer>
