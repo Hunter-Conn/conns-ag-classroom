@@ -1,1 +1,128 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Conn’s Ag Classroom</title><link rel="stylesheet" href="style.css"><header><strong>🌱 Conn’s Ag Classroom</strong><span>Student game library</span></header><main><section class="hero"><div class="tag">Agriculture education • Game hub</div><h1>Learn. Play. Grow.</h1><p>Practice on your own or compete with your class. Pick a game to get started.</p></section><h2>Available games</h2><div id="games" class="grid"></div><section class="hero"><h2>More subjects coming soon</h2><div class="grid"><div class="card">⚙️ <b>Ag Mechanics</b><p class="muted">Welding, shop safety and small engines</p></div><div class="card">🌾 <b>Plant & Animal Science</b><p class="muted">Future review games</p></div><div class="card">🦌 <b>Natural Resources</b><p class="muted">Wildlife and conservation</p></div></div></section><footer>Conn’s Ag Classroom • No student account required</footer></main><script src="catalog.js"></script><script>for(const g of games){const c=document.createElement('article');c.className='card';const art=document.createElement('div');art.className='art';art.textContent=g.icon;c.append(art);for(const [tag,value] of [['div',g.subject],['h2',g.title],['p',g.description]]){let e=document.createElement(tag);e.textContent=value;c.append(e)}for(const [label,url,cl] of [['Play independently',g.practice,'btn'],['Classroom team challenge',g.team,'btn secondary']]){if(url){let a=document.createElement('a');a.href=url;a.textContent=label;a.className=cl;c.append(a)}}document.getElementById('games').append(c)}</script></html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conn's Ag Classroom</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f5ef;
+  color: #183d2e;
+}
+header {
+  background: #173d31;
+  color: white;
+  padding: 45px 20px;
+  text-align: center;
+}
+header h1 {
+  font-size: 42px;
+  margin: 0 0 10px;
+}
+header p {
+  font-size: 20px;
+}
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 20px;
+}
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px #00000012;
+}
+.card h2 {
+  margin-top: 0;
+}
+.button {
+  display: inline-block;
+  background: #287a48;
+  color: white;
+  padding: 15px 22px;
+  margin: 8px 5px 8px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover {
+  background: #195b33;
+}
+.teacher {
+  background: #245b8c;
+}
+.teacher:hover {
+  background: #174369;
+}
+.soon {
+  color: #777;
+}
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #173d31;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🌱 Conn's Ag Classroom</h1>
+  <p>Learn. Play. Grow.</p>
+  <p>Interactive Agriculture Review Games</p>
+</header>
+
+<main>
+  <h2>🐟 Fish & Wildlife</h2>
+
+  <div class="card">
+    <h2>Minnesota Fish ID Challenge</h2>
+    <p>Test your knowledge of Minnesota fish species through pictures, identification questions, and fun challenges!</p>
+    <p>Includes all five fish identification categories.</p>
+
+    <a class="button" href="fish-practice.html">
+      🎮 Student Practice
+    </a>
+
+    <a class="button teacher" href="fish-team.html">
+      🏆 Classroom Team Challenge
+    </a>
+  </div>
+
+  <h2>⚙️ Ag Mechanics</h2>
+  <div class="card">
+    <h2>Welding & Small Engines</h2>
+    <p class="soon">New review games coming soon!</p>
+  </div>
+
+  <h2>🐄 Animal Science</h2>
+  <div class="card">
+    <h2>Animal Science Games</h2>
+    <p class="soon">New review games coming soon!</p>
+  </div>
+
+  <h2>🌽 Plant Science</h2>
+  <div class="card">
+    <h2>Plant Science Games</h2>
+    <p class="soon">New review games coming soon!</p>
+  </div>
+
+  <h2>🌟 Intro to Agriculture & FFA</h2>
+  <div class="card">
+    <h2>Agriculture & FFA Games</h2>
+    <p class="soon">New review games coming soon!</p>
+  </div>
+</main>
+
+<footer>
+  Conn's Ag Classroom | Agriculture Education
+</footer>
+
+</body>
+</html>
